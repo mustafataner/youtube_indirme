@@ -2,6 +2,18 @@ import streamlit as st
 from pytube import YouTube, Playlist
 import os
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
+
+
+
 st.title('YouTube Video İndirme Programı')
 
 # Video veya playlist URL'sini al
